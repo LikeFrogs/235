@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a:link {
+  color: white;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+header a:active {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+#splash {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, black), to(#ff0028));
+  background-image: linear-gradient(black 25%, #ff0028);
+  text-align: center;
+  padding-top: 1.5rem;
+  min-height: 400px;
+  margin-bottom: 1rem;
+}
+
+#splash h1 {
+  margin: 0;
+}
+
+#pitch {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#pitch p {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #pitch p {
+    max-width: 90%;
+  }
+}
+
+.section_header {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.section_header span {
+  position: relative;
+  display: inline-block;
+}
+
+.section_header span:before, .section_header span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: white;
+}
+
+.section_header span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.section_header span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
